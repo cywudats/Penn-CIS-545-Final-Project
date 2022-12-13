@@ -16,6 +16,12 @@ Given the fact that people having jobs are quite common in the world, compared t
 
 We want to build a model that can successfully predict the recommendation (0: Negative, 1: No opinion, 2: Positive) using the given features in Glassdoor Job Reviews dataset. Also, our group will determine which features people consider about recommending the company. The other goal is to build a machine-learning model that helps people predict whether the company is recommended.
 
+**Feature Engineering:**
+1. Our group comes up with a unique way to deal with categorical columns, which enables us to improve the signal-to-ratio. As a result, we can operate our machine learning task in a more convenient way. Our group converted firm, job_title, current, and location columns String to Unique Numerical Values. For the current column, our group carefully separated the data into several categories from the current employee to various lengths of time people were employed before. 
+
+2. Another feature our group applies to textual text is Afinn Sentiment Analysis which takes in a list of words and eventually rates for valence with an integer between minus five (negative) and plus five (positive). This process does help a lot in processing the texture data since comments, including pros, cons, and headline are crucial parts of our analysis.
+
+
 # Dataset
 
 We use the Glassdoor Job Reviews dataset provided on Kaggle as our dataset.
